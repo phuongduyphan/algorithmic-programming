@@ -1,0 +1,17 @@
+class Solution {
+    public int swimInWater(int[][] grid) {
+    	int n = grid.length;
+    	System.out.println(n);
+    }
+} 
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Solution so = new Solution();
+		int [][] grid = {{ 0, 2 }, { 1, 3 }};
+		so.swimInWater(grid);
+	}
+
+}

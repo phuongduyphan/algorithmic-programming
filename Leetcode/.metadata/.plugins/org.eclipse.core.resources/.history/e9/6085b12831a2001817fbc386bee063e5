@@ -1,0 +1,29 @@
+import java.util.Arrays;
+
+class Solution {
+	public int lengthOfLongestSubstring(String s) {
+		int i = 0, j = 0;
+		int result = 0;
+		int[] repeatCharArr = new int[26];
+		Arrays.fill(repeatCharArr, 0);
+
+		while (j < s.length()) {
+			repeatCharArr[s.charAt(j) - (int) 'a']++;
+			while (!checkCondition(repeatCharArr)) {
+				repeatCharArr[s.charAt(i) - (int) 'a']--;
+				i++;
+			}
+			result = Integer.max(result, j - i + 1);
+			j++;
+		}
+		return result;
+	}
+
+	public boolean checkCondition(int[] repeatCharArr) {
+		for (int i = 0; i < 26; i++) {
+			if (repeatCharArr[i] > 1)
+				return false;
+		}
+		return true;
+	}
+}

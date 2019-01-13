@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;3. Longest Substring Without Repeating Characters&apos;" deleteContents="false" description="Delete resource &apos;3. Longest Substring Without Repeating Characters&apos;" element1="/3. Longest Substring Without Repeating Characters" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1543569996689"/>
+</session>
