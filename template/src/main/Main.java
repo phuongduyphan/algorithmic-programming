@@ -1,8 +1,5 @@
 package main;
 
-import LinkedList.LinkedList;
-import LinkedList.LinkedListNode;
-
 public class Main {
 
 	public static void main(String[] args) {
